@@ -1,0 +1,25 @@
+body {
+    width: max-content;
+    margin: auto;
+}
+
+.wonders-list {
+    list-style: none;
+    padding: 0;
+    color: white;
+}
+
+.list-section {
+    padding: 20px 50px;
+    margin-bottom: 4px;
+    background: #b18979;
+}
+
+.list-section:last-child {
+    margin: 0;
+    border-radius: 0 0 10px 10px;
+}
+
+.list-section:first-child {
+    border-radius: 10px 10px 0 0;
+}
