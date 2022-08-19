@@ -1,0 +1,45 @@
+body {
+    width: max-content;
+    margin: auto;
+}
+
+.delivery-status {
+    background: #f0f0f0;
+    width: fit-content;
+    padding: 10px 20px;
+    margin-top: 10px;
+    height: 20px;
+}
+
+.delivery-status-list {
+    list-style: none;
+    counter-reset: num;
+    margin: 0;
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    padding-left: 0;
+}
+
+.delivery-status-default {
+    float: left;
+    display: inline-block;
+    margin: 0 65px 0 0;
+}
+
+.delivery-status-default::before {
+    background: #d4d8d3;
+    border-radius: 50%;
+    counter-increment: num;
+    content: counter(num);
+    padding: 5px 10px;
+}
+
+.delivery-status-active::before {
+    background: #91be4a;
+    color: white;
+}
+
+.delivery-status-default:last-child {
+    margin-right: 0;
+}
