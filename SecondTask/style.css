@@ -5,26 +5,29 @@ body {
 
 .delivery-status {
     background: #f0f0f0;
-    width: 700px;
+    width: fit-content;
     padding: 10px 20px;
-    overflow: hidden;
+    margin-top: 10px;
+    height: 20px;
 }
 
-.status-list {
+.delivery-status-list {
     list-style: none;
     counter-reset: num;
+    margin: 0;
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    padding-left: 0;
 }
 
-.status-list:last-child {
-    margin-right: 0;
-}
-
-li {
+.delivery-status-not-active {
     float: left;
-    margin-right: 65px;
+    display: inline-block;
+    margin: 0 65px 0 0;
 }
 
-li::before {
+.delivery-status-not-active::before {
     background: #d4d8d3;
     border-radius: 50%;
     counter-increment: num;
@@ -32,6 +35,11 @@ li::before {
     padding: 5px 10px;
 }
 
-.status-active::before {
+.delivery-status-active::before {
     background: #91be4a;
+    color: white;
+}
+
+.delivery-status-not-active:last-child {
+    margin-right: 0;
 }
