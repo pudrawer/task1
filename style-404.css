@@ -1,0 +1,47 @@
+body {
+    margin: auto;
+    width: max-content;
+    height: 100vh;
+    min-height: 400px;
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    color: #9dff8e;
+    text-shadow: 0 0 5px black;
+}
+
+.content-header-error {
+    color: red;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("1625175581_32-kartinkin-com-p-perelivayushchiisya-fon-krasivie-foni-32.jpg");
+    background-size: 100% 100%;
+    padding: 50px 100px;
+    margin: auto;
+    box-shadow: 10px 10px 40px deepskyblue;
+}
+
+.error-image {
+    margin-top: 25px;
+}
+
+.main-permalink {
+    text-decoration: none;
+    color: rgba(47, 255, 238, 0.8);
+    transition: letter-spacing .5s ease,color .5s ease, margin-left .5s ease;
+    text-shadow: 0 0 10px black;
+}
+
+.main-permalink:hover {
+    color: rgba(47, 255, 238, 1);
+    letter-spacing: 5px;
+    margin-left: 10px;
+}
+
+.main-permalink-box {
+    margin-top: 25px;
+    font-size: 20px;
+}
