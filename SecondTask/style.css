@@ -21,13 +21,13 @@ body {
     padding-left: 0;
 }
 
-.delivery-status-default {
+.delivery-status-not-active {
     float: left;
     display: inline-block;
     margin: 0 65px 0 0;
 }
 
-.delivery-status-default::before {
+.delivery-status-not-active::before {
     background: #d4d8d3;
     border-radius: 50%;
     counter-increment: num;
@@ -40,6 +40,6 @@ body {
     color: white;
 }
 
-.delivery-status-default:last-child {
+.delivery-status-not-active:last-child {
     margin-right: 0;
 }
