@@ -11,6 +11,8 @@ body {
     display: flex;
     flex-direction: column;
     padding: 20px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    border: 1px #44567e solid;
 }
 
 .name-field {
